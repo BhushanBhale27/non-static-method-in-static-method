@@ -1,0 +1,10 @@
+class MyClass {
+  static myStaticMethod() {
+    // this will result in an error
+    this.myNonStaticMethod();
+  }
+
+  myNonStaticMethod() {
+    console.log('I am a non-static method');
+  }
+}
